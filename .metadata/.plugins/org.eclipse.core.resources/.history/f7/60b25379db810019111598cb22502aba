@@ -1,0 +1,14 @@
+package com.cts.product.main.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.cts.product.main.repository.ProductRepository;
+
+public class ProductDao {
+@Autowired
+	private ProductRepository prodRepo;
+	
+public List getAllProducts() {
+	return prodRepo.findAll();
+}
+}
